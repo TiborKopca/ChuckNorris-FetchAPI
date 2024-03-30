@@ -1,0 +1,88 @@
+body {
+  height: 100vh;
+  width: auto;
+  background-color: rgb(117 217 125 / 35%);
+  color: grey;
+  font-size: xx-large;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+button {
+  font-weight: bolder;
+  width: 80%;
+  font-size: x-large;
+  margin: 1em auto;
+  padding: 1.5rem;
+  display: block;
+  border-radius: 0.5em;
+  text-wrap: wrap;
+  border-width: 0.3em;
+  border-color: azure;
+  box-shadow: black 10px 10px 48px;
+  color: crimson;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+header {
+  height: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  position: absolute;
+  top: 0;
+}
+footer {
+    text-align: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    color: black;
+    font-size: medium;
+}
+h1 {
+  height: auto;
+  /* margin: 1em auto; */
+  /* padding: 1em 1em; */
+  font-size: xx-large;
+  color: black;
+  text-align: center;
+  font-family: sans-serif;
+  justify-content: center;
+  font-weight: bolder;
+  top: 2em;
+}
+.outputDiv {
+  text-transform: none;
+  color: black;
+  font-size: smaller;
+  margin: 1em;
+  border: black 0.1em solid;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+img {
+  height: 2.5em;
+  text-align: center;
+}
+
+figure {
+  flex: 1;
+  margin: 0;
+}
+a, button{
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px){
+  .outputDiv{
+    font-size: medium;
+  }
+}
