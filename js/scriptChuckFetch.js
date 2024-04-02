@@ -1,7 +1,7 @@
 'use strict'
 //CONSTANTS//
 const outputJoke = document.getElementById('jokeWrapper')
-const chuckPic = document.getElementById('chuckPic')
+// const chuckPic = document.getElementById('chuckPic')
 const API_URL = 'https://api.chucknorris.io/jokes/random';
 
 //FUNCTION
@@ -24,9 +24,14 @@ function getJoke() {
 
       const newCharacterJSON = data;
       let phrase = newCharacterJSON.value;
-      let imagePath = newCharacterJSON.icon_url;
       outputJoke.innerHTML = phrase;
+
+      //MODYFYING SOURCE FOR THE IMAGE - image is loaded always from HTML, this is not needed
+      // let imagePath = newCharacterJSON.icon_url;
+      
       // chuckPic.setAttribute('src', 'https://api.chucknorris.io/img/chucknorris_logo_coloured_small@2x.png');
+      // chuckPic.src = imagePath; //optional
+      // chuckPic.style.display = 'block';
     })
 
     // this part of the code allows us to correctly catch the errors which might have appeared, both errors of the original promise being rejected as well as the errors which are thrown by our handleErrors function
